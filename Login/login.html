@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Fantastic Five</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Register/register.css">
+	<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<header>
+            <div class="toggle" onclick="toggleMenu();">
+
+            </div>
+            <ul class="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Register/register.html">Register</a></li>   
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">About</a></li> 
+                <li><a href="../Order/order.html">Order</a></li>    
+                
+            </ul>
+
+        </header>
+	</div>
+	
+
+
+	<div class="container" id="form-register-full" style="background-color: #418450;">
+        <div id="judul">
+            <h1 class="text-center">Login</h1>
+        </div>
+        <!-- Form -->
+        <form id="form-register"> 
+            
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input id="username" class="form-control" type="text" placeholder="Username" required>
+            </div>
+        
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input id="pwd" class="form-control" type="password" placeholder="Password" required>
+            </div>
+        </form>
+        <!-- Button -->
+        <div class="form-row text-center" id="button-submit" >
+            <div class="col-12">
+                <button style="background-color: #1C6758; border:0;" onclick="cekSemua()" type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <p>Belum Punya akun? <a href="../Register/register.html">Daftar Disini</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

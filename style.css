@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    background-image: url(./assets/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+section .content .textbox p {
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+}
+
+header ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #3C4048;
+    z-index: 10;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: #fff;
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.content {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    width: 100%;
+    transition: ease-out;
+}
+
+.toggle {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(./assets/icons/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    z-index: 11;
+}
+
+.toggle.active {
+    position: fixed;
+    right: 20px;
+    background: url(./assets/icons/close.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content .textbox {
+    position: relative;
+    max-width: 40%;
+}
+
+.content .textbox h1 {
+    color: #3C4048;
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.content .textbox h3 {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 1000;
+}
+
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #557153;
+    border-radius: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content .kotakIMG {
+    display: flex;
+    width: 600px;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .kotakIMG img {
+    max-width: 340px;
+    margin-top: 15px;
+    max-height: 600px;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    height: 200px;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 120px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    flex-direction: row;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.your-class .col-md-4 .card-body h5,
+.your-class .col-md-4 .card-body p {
+    color: #3C4048;
+}
+
+@media (max-width: 991px) {
+
+    header ul {
+        position: relative;
+        display: none;
+    }
+
+    section {
+        padding-top: 290px;
+        padding-right: 20px;
+        padding-bottom: 120px;
+        padding-left: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .content .kotakIMG {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .content .kotakIMG img {
+        max-width: 100px;
+
+    }
+
+    .thumb li img {
+        max-width: 20px;
+    }
+
+    .content .textbox h1 {
+        color: #3C4048;
+        margin-bottom: 15px;
+        font-size: 2.5em;
+    }
+
+    .content .textbox {
+        position: relative;
+        max-width: 100%;
+    }
+
+    .sci {
+        background: url(./assets/images/bg.jpg);
+        right: 0;
+        top: 100px;
+        width: 50px;
+        border-radius: 5px;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    header ul li a {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+
+    section .content .textbox p {
+        font-size: 1em;
+        width: 50%;
+    }
+
+    section .content .textbox a {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

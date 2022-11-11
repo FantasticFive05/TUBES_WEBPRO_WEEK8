@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  max-height: 3.125em;
+}
+
+
+header ul {
+  display: flex;
+  position: relative;
+  margin-top: 0.5em;
+  margin-left: 2em;
+}
+
+header ul.navigation.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #3C4048;
+  z-index: 10;
+}
+
+
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  color: #fff;
+  display: inline-block;
+  margin-left: 40px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.container {
+  background-color: #7D8F69;
+}
+
+
+
+
+
+
+/*img{
+	width: 100%;
+}
+.login {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.login_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .left{
+  width: 100%;
+}
+
+.left .contact{
+	display: flex;
+    align-items: center;
+    height: 100%;
+    width: 73%;
+    margin: auto
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #2E3192, #1BFFFF);
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.right {
+	background: url(bekgron.jpg);
+	color: #fff;
+	position: relative;
+  background-repeat: no-repeat;
+}
+
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%)
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.login .login_box .left .contact p {
+  display: flex;
+  align-items: center;
+  margin-top:10px;
+}/*
