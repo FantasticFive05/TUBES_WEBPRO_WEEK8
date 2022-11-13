@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  /*footer */
+
+  .footer-content {
+    display: flex;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    gap: 20px;
+  }
+
+
+
+.footer-content .contactUS h5 {
+  color: #fff;
+}
+
+.footer-content .contactUS table tr td {
+    padding-right: 10px;
+}
+
+.footer-content .lokasi {
+  width: 25%;
+}
+
+.footer-content .lokasi h5, .footer-content .lokasi p {
+  color: #fff;
+}
+
+.footer-content .lokasi p {
+  width: 100%;
+}
+
+
+.footer-content .Media-Sosial ul li a {
+    filter: invert(1);
+    text-decoration: none;
+}
+
+.footer-content .Media-Sosial ul {
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+    list-style-type: none;
+}
+
+.footer-content .Media-Sosial h5 {
+    margin-left: 30px;
+    color: #fff;
+}
+
+
+
+.footer-content .Slogan h5, .footer-content .Slogan p {
+  color: #fff;
+}
+
+/*end footer */
+
+
+  hr {
+    border: 1px solid black;
+    height: 0px;
+  }
+ 
+  .kartu {
+    display: flex;
+    gap: 20px; 
+  }
+.main-content {
+    background-image: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.main-content h1, .main-content h2, .main-content h3,
+.main-content h4, .main-content h5, .main-content h6,
+.main-content p{
+    color: #2C3639;
+}
+
+.main-content h4 {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2C3639;
+}
+.Highlight-Image {
+    background-position: center;
+    background-size: cover;
+    /* height: 1em; */
+    max-height: 45em;
+}
+
+.main-content p .harga {
+    color: #E14D2A;
+}
+
+@media  screen and (max-width:700px){
+    .kartu {
+        display: block;
+      }
+}

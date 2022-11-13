@@ -14,23 +14,42 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-		<header>
-            <div class="toggle" onclick="toggleMenu();">
+    <!-- Navbar-->
 
-            </div>
-            <ul class="navigation">
-             <li><a href="../index.html">Home</a></li>
-             <li><a href="register.html">Register</a></li>   
-             <li><a href="../Login/login.html">Login</a></li>
-             <li><a href="#">About</a></li> 
-             <li><a href="../Order/order.html">Order</a></li>    
-                
+    <nav id="navbar" class="navbar navbar-expand-lg " style="background: url(../assets/images/bg.jpg) ; ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Login/login.html">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../Order/order.html">Order</a>
+                  </li>
+              
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Type Here" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            
+          </div>
+        </div>
+      </nav>
 
-        </header>
+      <!--End Navbar-->
 
-    <div class="container" id="form-register-full">
+      <!--Login Form-->
+
+    <div style="margin-top : 100px; background-color: #418450;" class="container" id="form-register-full">
         <div id="judul">
             <h1 class="text-center">Register</h1>
         </div>
@@ -56,7 +75,7 @@
         <!-- Button -->
         <div class="form-row text-center" id="button-submit">
             <div class="col-12">
-                <button onclick="cekSemua()" type="submit" class="btn btn-primary btn-lg">Submit</button>
+                <button style="background-color: #7D8F69; border: 0;" onclick="cekSemua()" type="submit" class="btn btn-primary btn-lg">Submit</button>
                 <p>Sudah punya akun? <a href="../Login/login.html">Login</a></p>
             </div>
         </div>

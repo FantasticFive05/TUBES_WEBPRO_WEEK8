@@ -30,22 +30,39 @@
     </script>
 </head>
 <body>
-    <div class="container-fluid">
-		<header>
-            <div class="toggle" onclick="toggleMenu();">
+    <!-- Navbar-->
 
-            </div>
-            <ul class="navigation">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../Register/register.html">Register</a></li>   
-                <li><a href="../Login/login.html">Login</a></li>
-                <li><a href="#">About</a></li> 
-                <li><a href="order.html">Order</a></li>     
-                
+    <nav id="navbar" class="navbar navbar-expand-lg " style="background: url(../assets/images/bg.jpg) ; ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Register/register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Login/login.html">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order</a>
+                  </li>
+              
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Type Here" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            
+          </div>
+        </div>
+      </nav>
 
-        </header>
-	</div>
+      <!--End Navbar-->
+
     <div class="container mt-5">
         <div class="text-center">
             <h1 class=" mb-5">Pemesanan</h1>
@@ -67,7 +84,7 @@
                 </div>
                 <div class="col-8 form-row text-center">
                     <!-- Button Submit -->
-                    <input type="submit" value="Submit" class="btn btn-primary add-btn btn-secondary">
+                    <input style="background-color: #1C6758; border:0;" type="submit" value="Submit" class="btn btn-primary add-btn btn-secondary">
                 </div>
             </form>
             <div class="col-10 mt-5">
